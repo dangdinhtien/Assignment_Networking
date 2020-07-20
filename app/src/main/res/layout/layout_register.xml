@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:textSize="48dp"
+        android:text="REGISTER"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full name"
+        android:layout_marginTop="10dp"
+        android:textColor="#ff0000"
+        android:textSize="24dp"/>
+    <EditText
+        android:id="@+id/edtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textColor="#ff0000"
+        android:layout_marginTop="10dp"
+        android:textSize="24dp"/>
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:layout_marginTop="10dp"
+        android:textColor="#ff0000"
+        android:textSize="24dp"/>
+    <EditText
+        android:id="@+id/edtPass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:layout_marginTop="10dp"
+        android:textColor="#ff0000"
+        android:textSize="24dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sign up"
+        android:background="@color/colorPrimary"/>
+</LinearLayout>

@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "DANGDINHTIEN_PS10163_ASM"
