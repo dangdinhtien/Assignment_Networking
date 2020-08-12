@@ -1,55 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:background="@color/colorPrimary"
-        android:textSize="48dp"
-        android:text="REGISTER"
-        android:textColor="#fff"
-        android:gravity="center"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/edtTen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Full name"
-        android:layout_marginTop="10dp"
-        android:textColor="#ff0000"
-        android:textSize="24dp"/>
-    <EditText
-        android:id="@+id/edtUser"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="username"
-        android:textColor="#ff0000"
-        android:layout_marginTop="10dp"
-        android:textSize="24dp"/>
-    <EditText
-        android:id="@+id/edtPass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="password"
-        android:layout_marginTop="10dp"
-        android:textColor="#ff0000"
-        android:textSize="24dp"/>
-    <EditText
-        android:id="@+id/edtPass1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="password"
-        android:layout_marginTop="10dp"
-        android:textColor="#ff0000"
-        android:textSize="24dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:background="#0099ff">
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="48dp"
+            android:text="REGISTER"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full name"
+            android:background="#fff"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ff0000"
+            android:textSize="24dp"/>
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:background="#fff"
+            android:textSize="24dp"/>
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:background="#fff"
+            android:textSize="24dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_gravity="center"
+                android:layout_marginRight="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Cancel"
+                android:background="@color/colorPrimary"/>
+            <Button
+                android:id="@+id/btnRigister"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Sign up"
+                android:background="@color/colorPrimary"/>
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Sign up"
-        android:background="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

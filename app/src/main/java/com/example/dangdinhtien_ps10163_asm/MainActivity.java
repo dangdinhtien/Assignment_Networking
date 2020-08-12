@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new Fragment_1()).commit();
+                    new Fragment_trangchu()).commit();
             navigationView.setCheckedItem(R.id.nav_message);
         }
     }
@@ -40,21 +40,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (item.getItemId()) {
             case R.id.nav_message:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new Fragment_1()).commit();
-                break;
-            case R.id.nav_chat:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new Fragment_2()).commit();
+                        new Fragment_trangchu()).commit();
                 break;
             case R.id.nav_profile:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new Fragment_3()).commit();
-                break;
-            case R.id.nav_share:
-                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+                        new Fragment_Tacgia()).commit();
                 break;
             case R.id.nav_send:
-                Toast.makeText(this, "Send", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "thoat", Toast.LENGTH_SHORT).show();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);
